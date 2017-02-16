@@ -17,10 +17,12 @@
        function myMap() {
          var mapOptions = {
            center: new google.maps.LatLng(45.612789, 4.835411),
+             center2: new google.maps.LatLng(51.515406, -0.108479),
            zoom: 10,
            mapTypeId: google.maps.MapTypeId.HYBRID
        }
        var myCenter = new google.maps.LatLng(45.612789, 4.835411);
+           var myCenter2 = new google.maps.LatLng(51.515406, -0.108479);
        var map = new google.maps.Map (document.getElementById("map"), mapOptions);
        var marker = new google.maps.Marker({position:myCenter});
        marker.setMap(map);
