@@ -1,1 +1,32 @@
+<!-- Ajout d'une Maps
+    Dans la page, on créé une div qui va recevoir la carte. Il faut donner les dimensions : -->
 
+<div id = "map" style = "width: 400px; height: 400px">
+  
+  <body>
+
+     <script>
+       function myMap(){
+         var mapOptions={
+           center: new google.maps.latlng(51.5,-0.12),
+                                          zoom: 10,
+                                          mapTypeId: google.maps.MapTypeId.HYBRID}
+                                          }
+       var myCenter= new google.maps.latlng(51.5,-0.12);
+       var map= new google.maps.Map (document.getElementById("map"),
+                                     mapOptions);
+       var marker= new google.maps.Marker({position: myCenter});
+       marker.setMap(map)
+    </script>
+    
+    <!-- Pour aller chercher une clé d'authentification, il faut taper sur google.com "get API key google maps"
+         page : Get a Key/Authentification
+         ensuite aller dans GET A KEY
+         pour finir générer la clé -->
+    
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAT1V7VC7zhuGd3Rz_V1a6B_8rBIbyXTqQ&callback=myMap"> </script>
+      
+      
+  </body>
+                                          
+                                          
