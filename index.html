@@ -17,9 +17,8 @@
            mapTypeId: google.maps.MapTypeId.HYBRID
        }
        var myCenter = new google.maps.Latlng(51.5,-0.12);
-       var map = new google.maps.Map (document.getElementById("map"),
-                                     mapOptions);
-       var marker = new google.maps.Marker({position: myCenter});
+       var map = new google.maps.Map (document.getElementById("map"), mapOptions);
+       var marker = new google.maps.Marker({position:myCenter});
        marker.setMap(map);
        }
     </script>
@@ -29,7 +28,7 @@
          ensuite aller dans GET A KEY
          pour finir générer la clé -->
     
-    <script src="http://maps.googleapis.com/maps/api/js?key= AIzaSyAT1V7VC7zhuGd3Rz_V1a6B_8rBIbyXTqQ &callback=myMap"> </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAT1V7VC7zhuGd3Rz_V1a6B_8rBIbyXTqQ &callback=myMap"> </script>
       
     </body>
 </html>
